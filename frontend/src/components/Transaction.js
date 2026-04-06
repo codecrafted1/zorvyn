@@ -53,10 +53,15 @@ const Transaction = () => {
     if (el && !elementsRef.current.includes(el)) {
       elementsRef.current.push(el);
     }
+  };
 
-  
-  const income = data.filter(d => d.type === "income").reduce((a, b) => a + b.amount, 0);
-  const expense = data.filter(d => d.type === "expense").reduce((a, b) => a + b.amount, 0);
+  const income = data
+    .filter((d) => d.type === "income")
+    .reduce((a, b) => a + b.amount, 0);
+
+  const expense = data
+    .filter((d) => d.type === "expense")
+    .reduce((a, b) => a + b.amount, 0);
 
   return (
     <div className="transaction">
@@ -120,4 +125,4 @@ const Transaction = () => {
   );
 };
 
-export default Transaction ;
+export default Transaction;
