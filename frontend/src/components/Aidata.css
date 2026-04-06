@@ -1,0 +1,90 @@
+.aidata {
+  flex: 1;
+  padding: 20px;
+  background: #f8f9fc;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Upload */
+.upload-box {
+  background: rgb(228, 223, 223);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.upload-box button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #3b5bdb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  border: none;
+  background: #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Table */
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Reports */
+.report-cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.report-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 120px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Graphs */
+.graphs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-box {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}

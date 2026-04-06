@@ -1,0 +1,88 @@
+.program {
+  flex: 1;
+  padding: 20px;
+  background: #f8f9fc;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Header */
+.program-header {
+  margin-bottom: 20px;
+}
+
+/* Grid (2 x 3) */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+/* Card */
+.program-card {
+  background: white;
+  padding: 70px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.program-card h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.program-card p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.program-card button {
+  padding: 8px 12px;
+  border: none;
+  background: #3b5bdb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Hover */
+.program-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  border: none;
+  background: #3b5bdb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .program-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+}
